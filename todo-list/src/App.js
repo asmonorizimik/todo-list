@@ -44,8 +44,11 @@ export default function Todo(){
                   }
                   setAllList(newArr)
                 }}>edit</button>
+
                 <button onClick={()=>{
-                  
+                  let newArr1= [...allList];
+                  newArr1[index]=<strike>{newArr1[index]}</strike>
+                  setAllList(newArr1)
                 }}>complete</button>
               </div>
             )
